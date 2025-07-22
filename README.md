@@ -1,0 +1,1 @@
+# bayer-vite-react-ts-template
