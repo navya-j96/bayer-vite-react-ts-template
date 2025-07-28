@@ -8,6 +8,11 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   server: {
+    host:true,
+    port:5170,
+    watch:{
+      usePolling: true
+    },
     allowedHosts: [
       '.csb.app'           
     ]

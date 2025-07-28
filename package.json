@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "docker build -f Dockerfile.dev -t my-vite-dev . && docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 5170:5170 my-vite-dev",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
